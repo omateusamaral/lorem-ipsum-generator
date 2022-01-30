@@ -31,7 +31,10 @@ function App() {
 
   function quantityWords(value:number){
 
-    if(value<=0 || value>=100){
+    if(value <= 0){
+      value = 1;
+    }
+    if(value>=100){
       toast('digite um valor entre 1 e 100',
         {
           type: 'info',
